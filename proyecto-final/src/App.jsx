@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-
 import NavBar from './components/NavBar/NavBar';
+import ItemListConatiner from './components/ItemListContainer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <ItemListConatiner greeting='Tienda Online de Ocean Cakes' />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
