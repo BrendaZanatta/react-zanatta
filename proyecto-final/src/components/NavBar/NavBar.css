@@ -1,23 +1,28 @@
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav {
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     list-style-type: none;
     display: flex;
     justify-content: center;
-    background: #e3efee;
+    justify-self: center;
+    align-self: center;
 }
 
 .nav a {
     text-decoration: none;
-    padding: 20px;
+    padding: 30px;
     color: #606060;
     font-size: 1.2em;
     font-family: 'Amatic SC', cursive;
 }
 
-.logo {
-    color: rgb(194, 241, 226);
-    font-size: 3em;
+img {
+    height: 100px;
+    width: 100px;
 }
-
 

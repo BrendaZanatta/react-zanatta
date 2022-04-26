@@ -1,0 +1,19 @@
+.cajaBotones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantidad {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button {
+    padding: 50px;
+}
+
+
+
+
+
