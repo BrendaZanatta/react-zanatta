@@ -1,5 +1,10 @@
 .contenido {
-    height: 100vh;
-    background-color: azure;
-    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    outline: none;
+    border: none;
 }

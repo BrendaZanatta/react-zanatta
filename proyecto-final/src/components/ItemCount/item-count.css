@@ -1,19 +1,25 @@
 .cajaBotones {
+    background-color: rgba(230, 240, 244, 0.942);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.cajaBotones div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cantidad {
-    margin-left: 10px;
-    margin-right: 10px;
+.cajaBotones button {
+    background-color: aliceblue;
 }
 
-.button {
-    padding: 50px;
+.cajaBotones input {
+    margin: 10px;
+    text-align: center;
+    font-size: 1em;
 }
-
-
 
 
 

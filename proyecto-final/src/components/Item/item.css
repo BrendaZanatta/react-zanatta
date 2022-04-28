@@ -1,0 +1,31 @@
+.tarjetasProductos {
+    gap: 1em;
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 0.3em;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -10px black;
+    background-color: whitesmoke;
+}
+.texto {
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.imgContenedor {
+    height: 200px;
+}
+
+.imagen {
+    padding: 20px;
+    height: 150px;
+}
+
+.tarjetaImagen {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+

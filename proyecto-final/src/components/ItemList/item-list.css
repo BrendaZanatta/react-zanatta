@@ -1,0 +1,11 @@
+.itemList {
+    min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: azure;
+    font-family: 'Raleway', sans-serif;
+    color: #606060;
+}

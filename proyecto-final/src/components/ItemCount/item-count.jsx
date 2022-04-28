@@ -18,15 +18,15 @@ const ItemCount = ({stock, initial}) => {
     };
     const onAdd = () => {
         const mensaje = `Se agregaron ${count} productos al carrito`;
-        count === 1 ? alert (mensaje) : alert (`${mensaje}s`);
+        count === 1 ? alert(mensaje) : alert(`${mensaje}s`);
     };
 
     return (
-        <div>
-            <div className='cajaBotones'>
-            <button onClick={onDisminuye}> - </button>
-            <h1 className='cantidad'> {count} </h1>
-            <button  onClick={onAumenta}> + </button>
+        <div className='cajaBotones'>
+            <div>
+                <button onClick={onDisminuye}> - </button>
+                <input readOnly value={count} />
+                <button onClick={onAumenta}> + </button>
             </div>
         <button onClick={onAdd}>Agregar al carrito</button>
         </div>
