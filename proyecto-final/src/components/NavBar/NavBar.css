@@ -21,6 +21,11 @@
     font-family: 'Amatic SC', cursive;
 }
 
+.nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
 img {
     height: 100px;
     width: 100px;

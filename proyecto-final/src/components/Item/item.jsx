@@ -1,5 +1,6 @@
 import React from "react";
 import './item.css';
+import { Link } from 'react-router-dom';    
 
 function Item ({item}) {
     return (
@@ -9,6 +10,7 @@ function Item ({item}) {
                 <div className="imagen">
                     <img className="tarjetaImagen" src={item?.imageUrl} alt="Imagen no disponible" />
                 </div>
+                <Link to={'/item/' + item?.id} className="BotonDetalle hvr-rectangle-out"> Ver detalle</Link> 
             </div>
             <div className="texto">{item?.price}</div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import CartWidget from '../CartWidget/cart-widget';
 import './NavBar.css';
+import { NavLink } from 'react-router-dom';
 
 
 function NavBar(props) {
@@ -12,11 +13,11 @@ function NavBar(props) {
             />    
     
             <ul className='nav'>
-                <li><a href='#'>Inicio</a></li>
-                <li><a href='#'>Productos</a></li>
-                <li><a href='#'>Nosotras</a></li>
-                <li><a href='#'>Preguntas Frecuentes</a></li>
-                <li><a href='#'>Contacto</a></li>        
+                <li><NavLink to='/category/inicio'>Inicio</NavLink> </li>
+                <li><NavLink to='/category/productos'>Productos</NavLink></li>
+                <li><NavLink to='/category/nosotras'>Nosotras</NavLink></li>
+                <li><NavLink to='/category/preguntasfrecuentes'>Preguntas Frecuentes</NavLink></li>
+                <li><NavLink to='/category/contacto'>Contacto</NavLink></li>        
             </ul>
             <CartWidget/>
         </div>
