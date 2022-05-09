@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './item-count.css'
 
-const ItemCount = ({stock, initial}) => {
+const ItemCount = ({stock, initial, onAdd}) => {
     const [count, setCount] = useState(initial);
 
     const onAumenta = () => {
@@ -16,10 +16,10 @@ const ItemCount = ({stock, initial}) => {
             setCount(newValue);
         }
     };
-    const onAdd = () => {
-        const mensaje = `Se agregaron ${count} productos al carrito`;
-        count === 1 ? alert(mensaje) : alert(`${mensaje}s`);
-    };
+    // const onAdd = () => {
+    //     const mensaje = `Se agregaron ${count} productos al carrito`;
+    //     count === 1 ? alert(mensaje) : alert(`${mensaje}`);
+    // };
 
     return (
         <div className='cajaBotones'>
@@ -28,7 +28,8 @@ const ItemCount = ({stock, initial}) => {
                 <input readOnly value={count} />
                 <button onClick={onAumenta}> + </button>
             </div>
-        <button onClick={onAdd}>Agregar al carrito</button>
+            <button onClick={() => (count <=stock) && onAdd(count)}>Agregar al carrito</button>
+        {/* <button onClick={onAdd}>Agregar al carrito</button> */}
         </div>
     );
 };  
