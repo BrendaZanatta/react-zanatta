@@ -4,6 +4,7 @@ import ItemDetailContainer from './pages/ItemDetailContainer/item-detail-contain
 import ItemListConatiner from './pages/ItemListContainer/item-list-container';
 import { Route, Routes } from 'react-router-dom';
 import Cart from './pages/Cart/cart';
+import { CartContextProvider } from './store/cart-context';
 
 function App() {
   return (

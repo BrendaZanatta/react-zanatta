@@ -14,7 +14,7 @@ function getProducts(category) {
         price: '$1200',
         stock: 5,
         category: 'productos',
-        imageUrl: 'img1.jpg',
+        imageUrl: '/img1.jpg',
       },
       {
         id:2,
@@ -22,7 +22,7 @@ function getProducts(category) {
         price: '$1300',
         stock: 5,
         category: 'productos',
-        imageUrl: 'img2.jpg',
+        imageUrl: '/img2.jpg',
       },
       {
         id:3,
@@ -30,7 +30,7 @@ function getProducts(category) {
         price: '$1500',
         stock: 5,
         category: 'productos',
-        imageUrl: 'img3.jpg',
+        imageUrl: '/img3.jpg',
       },
       {
         id:4,
@@ -38,7 +38,39 @@ function getProducts(category) {
         price: '$1800',
         stock: 5,
         category: 'productos',
-        imageUrl: 'img4.jpg',
+        imageUrl: '/img4.jpg',
+      },
+      {
+        id:5,
+        title: 'Torta Rogel',
+        price: '$1900',
+        stock: 5,
+        category: 'productos',
+        imageUrl: '/img5.jpg',
+      },
+      {
+        id:6,
+        title: 'Lemon Pie',
+        price: '$1550',
+        stock: 5,
+        category: 'productos',
+        imageUrl: '/img6.jpg',
+      },   
+      {
+        id:7,
+        title: 'Letter Cake',
+        price: '$1600',
+        stock: 5,
+        category: 'productos',
+        imageUrl: '/img7.jpg',
+      },
+      {
+        id:8,
+        title: 'Drip Cake',
+        price: '$2000',
+        stock: 5,
+        category: 'productos',
+        imageUrl: '/img8.jpg',
       },
     ];
     
