@@ -81,3 +81,11 @@
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+.bubbleMas {
+    margin: 0;
+    height: 0;
+    position: relative;
+    left: 45%;
+    bottom: 4%;
+}

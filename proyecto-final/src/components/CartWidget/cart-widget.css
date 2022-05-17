@@ -5,3 +5,13 @@
     font-size: 30px;
 }
 
+.carrito a:hover {
+    color: black;
+}
+
+.carritoBubble {
+    position: relative;
+    bottom: 116%;
+    left: 67%;
+    font-size: 1.3rem;
+}

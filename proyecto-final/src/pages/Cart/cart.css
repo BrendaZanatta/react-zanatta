@@ -1,0 +1,37 @@
+.tarjetaTotal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color:#606060 ;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.tarjetaTotal h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.botonTerminar button {
+    color: #606060 ;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:  rgb(183, 238, 220);
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.botonInicio {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(183, 238, 220);
+    font-family: 'Raleway', sans-serif;
+}
+

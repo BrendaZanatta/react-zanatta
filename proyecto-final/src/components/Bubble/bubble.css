@@ -1,0 +1,22 @@
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(183, 238, 220);
+    color: #606060;
+    font-weight: bold;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botonBubble {
+    color: #606060;
+    font-weight: bold;
+}
+
+
+
+

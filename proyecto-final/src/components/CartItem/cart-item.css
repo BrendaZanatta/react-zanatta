@@ -1,0 +1,40 @@
+.tarjetaCarrito {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.tarjetaCarrito p {
+    color: #606060;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.tarjetaCarrito img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imagenCarrito {
+    height: 100px;
+}
+
+.botonEliminar {
+    height: 0;
+    position: relative;
+    bottom: 14%;
+    left: 27%;
+}
+
+.botonCantidad {
+    height: 0;
+    position: relative;
+    bottom: 14%;
+    right: 27%;
+}

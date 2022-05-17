@@ -21,16 +21,11 @@ function ItemDetail({item}) {
         <div className="cajaInfo">
             <div className="cajaDetalle">
                 <h2>{item?.title}</h2>
-                <p>{item?.price}</p>
+                <p>${item?.price}</p>
                 <div className="botonesCarrito">
                     <ItemCount initial={1} stock={item.stock} onAdd={addHandler}/>
-                    <button onClick={() => console.log(cartCtx.products)} >Imprimir carrito</button>
-                    <button onClick={() => cartCtx.removeProduct(item.id)} >Eliminar producto</button>
-                    <button onClick={() => cartCtx.clear()} >Vaciar carrito</button>
-                    <button onClick={() => console.log(cartCtx.isInCart(item.id))} >Is in cart</button>
-                    <button onClick={() => console.log(cartCtx.getCartQuantity())} >Quantity</button>
-                    {cartCtx.products.length &&
-                        <button onClick={() => console.log(cartCtx)}>
+                    {cartCtx.isInCart(item.id) &&
+                        <button>
                             <Link to='/cart'>
                                 Finalizar compra ({ cartCtx.getCartQuantity() } items)
                             </Link>
