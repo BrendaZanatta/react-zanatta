@@ -5,6 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { CartContextProvider } from './store/cart-context';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDPK74YBZaNnjqP76aszWHl_mj-2ymEdYQ",
+  authDomain: "react-zanatta.firebaseapp.com",
+  projectId: "react-zanatta",
+  storageBucket: "react-zanatta.appspot.com",
+  messagingSenderId: "315611841561",
+  appId: "1:315611841561:web:2d3d31deeaa0f385739688"
+};
+
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
