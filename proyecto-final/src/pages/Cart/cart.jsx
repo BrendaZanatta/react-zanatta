@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartItem from '../../components/CartItem/cart-item';
-import CartContext from '../../store/cart-context';
 import './cart.css';
+import { CartContext } from './store/cart-context';
 
-function Cart() {
-    const cartCtx = useContext(CartContext);
+const Cart = () => {
+    const {cartCtx, clear} = useContext(CartContext);
 
     return (
     <div className='tarjetaTotal'>
@@ -13,11 +13,14 @@ function Cart() {
         {cartCtx.products.length !== 0 ?
         <div className='botonTerminar'>
             <p>Precio total: ${cartCtx.getTotalPrice()}</p>
-            <button>Terminar compra</button>
+            <button className="botones" onClick={clear}>Vaciar Carrito</button>
+            <Link to='/checkout'>
+            <button className='botones'>Terminar compra</button>
+            </Link>
         </div> :
         <>
             <h2>No hay productos en el carrito</h2>
-            <button className='botonInicio'>
+            <button className='botones'>
             <Link to='/'>Ir al inicio</Link>
             </button>
         </>
